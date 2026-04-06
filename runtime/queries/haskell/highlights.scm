@@ -193,7 +193,8 @@
   match: (_)
   (#eq? @_name @function))
 
-((decl/signature) @function
+((decl/signature
+    name: (variable) @function)
   .
   (decl/function
     name: (variable) @function))
@@ -327,7 +328,7 @@
       (#any-of? @_op "." ">>>" "***" ">=>" "<=<"))))
 
 (apply
-  [
+  function: [
     (expression/variable) @function.call
     (expression/qualified
       (variable) @function.call)
