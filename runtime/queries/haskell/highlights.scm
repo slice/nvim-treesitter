@@ -252,7 +252,7 @@
 ]
   .
   (operator) @_op
-  (#any-of? @_op "$" "<$>" ">>=" "=<<"))
+  (#any-of? @_op "$" "<$>" "=<<"))
 
 ; right hand side of infix operator
 ((infix
@@ -269,7 +269,7 @@
   ])
   .
   (operator) @_op
-  (#any-of? @_op "$" "<$>" "=<<"))
+  (#any-of? @_op "$" "<$>"))
 
 ; decl/function composition, arrows, monadic composition (lhs)
 ([
