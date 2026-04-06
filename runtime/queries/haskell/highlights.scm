@@ -220,17 +220,6 @@
       (variable) @operator)
   ])
 
-; decl/function calls with an infix operator
-; e.g. func <$> a <*> b
-(infix
-  left_operand: [
-    (variable) @function.call
-    (qualified
-      ((module) @module
-        (variable) @function.call))
-  ]
-  operator: (operator))
-
 ; infix operators applied to variables
 ((expression/variable) @variable
   .
